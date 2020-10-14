@@ -1,3 +1,9 @@
+
+arr = []
+for x in range(5):
+    arr.append(int(input("Enter a Number : ")))
+print("Original Array : ", arr)
+
 def heapify(arr,n,i):
     largest = i
     l = 2 * i + 1
@@ -23,9 +29,6 @@ def heapSort(arr):
         arr[i], arr[0] = arr[0], arr[i]
         heapify(arr, i, 0)
 
-arr = [ 12, 11, 13, 5, 6, 7]
-heapSort(arr)
 n = len(arr)
-print ("Sorted array is")
-print(arr)
-
+heapSort(arr)
+print ("Sorted array is", arr)
